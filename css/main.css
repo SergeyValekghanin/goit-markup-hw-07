@@ -1,0 +1,241 @@
+:root {
+  --body-background: #ffffff;
+  --acent: #2196f3;
+  --black-logo-header: #000000;
+  --nav-header-link: #212121;
+  --nav-header-contact: #757575;
+  --hero-title: #ffffff;
+  --button-hero: #2196f3;
+  --hero-background: #2f303a;
+  --title: #212121;
+  --filter-buttons: #212121;
+  --text: #212121;
+  --white-logo-footer: #ffffff;
+  --button-hero-title: #ffffff;
+  --bkg-section-our-team: #f5f4fa;
+  --footer-bkg: #2f303a;
+  --logo-footer: #ffffff;
+  --footer-mail-phone: rgba(255, 255, 255, 0.6);
+  --fiz-adress: #ffffff;
+  --button-filter: #f5f4fa;
+  --button-title: #212121;
+  --button-title-hover: #ffffff;
+  --bkg-card-portfolio: #ffffff;
+  --text-card-portfolio: #757575;
+  --paragraf: #757575;
+  --border-heder: #ececec;
+  --border-heder-portfolio: #d9d9d9;
+  --net-item-border: #eeeeee;
+  --icon-benefit: #f5f4fa;
+  --svg-tel: #757575;
+  --svg-envelope: #757575;
+  --svg-soc-icon: #afb1b8;
+  --svg-color-hover: #ffffff;
+  --svg-client: #afb1b8;
+  --title-join: #ffffff;
+  --svg-color-footer: #ffffff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  color: var(--text);
+  background-color: var(--body-background);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.heder-section {
+  border-bottom: 1px solid var(--border-heder);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo-web {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--acent);
+}
+
+.logo-header {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--black-logo-header);
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 90px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--nav-header-link);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current {
+  color: var(--acent);
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--acent);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--acent);
+}
+
+.contact {
+  display: flex;
+  margin-left: auto;
+  gap: 30px;
+}
+
+.header-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-envelope {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.svg-tel {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--acent);
+}
+
+.hero-title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hero-title);
+}
+
+.hero {
+  background-color: var(--hero-background);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button-hero {
+  min-width: 216px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-bottom: 200px; */
+  padding: 10px 32px;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+  background: var(--button-hero);
+  color: var(--button-hero-title);
+}/*# sourceMappingURL=main.css.map */
