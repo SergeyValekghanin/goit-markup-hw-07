@@ -154,11 +154,13 @@ body {
   color: var(--nav-header-link);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.nav-link:hover, .nav-link:focus {
+  color: var(--acent);
+}
 
 .current {
   color: var(--acent);
 }
-
 .current::after {
   content: "";
   position: absolute;
@@ -169,11 +171,6 @@ body {
   height: 4px;
   border-radius: 2px;
   background-color: var(--acent);
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--acent);
 }
 
 .contact {
@@ -192,6 +189,9 @@ body {
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header-contact:hover, .header-contact:focus {
+  color: var(--acent);
+}
 
 .svg-envelope {
   fill: currentColor;
@@ -201,11 +201,6 @@ body {
 .svg-tel {
   fill: currentColor;
   margin-right: 10px;
-}
-
-.header-contact:hover,
-.header-contact:focus {
-  color: var(--acent);
 }
 
 .footer {
@@ -241,9 +236,7 @@ body {
   color: var(--fiz-adress);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.fiz-adress:hover,
-.fiz-adress:focus {
+.fiz-adress:hover, .fiz-adress:focus {
   color: var(--acent);
 }
 
@@ -256,9 +249,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-mail-phoneess:hover,
-.footer-mail-phoneess:focus {
+.footer-mail-phoneess:hover, .footer-mail-phoneess:focus {
   color: var(--acent);
 }
 
@@ -303,6 +294,9 @@ body {
   background: rgba(255, 255, 255, 0.1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.soc-item-link-footer:hover, .soc-item-link-footer:focus {
+  background-color: var(--acent);
+}
 
 .ins-foo {
   fill: currentColor;
@@ -320,12 +314,6 @@ body {
   fill: currentColor;
 }
 
-.soc-item-link-footer:hover,
-.soc-item-link-footer:focus {
-  background-color: var(--acent);
-}
-
-/* ---------------footer-form------------------- */
 .footer-form {
   margin-left: 93px;
 }
@@ -405,9 +393,7 @@ body {
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-filter:hover,
-.button-filter:focus {
+.button-filter:hover, .button-filter:focus {
   color: var(--button-title-hover);
   background-color: var(--acent);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -425,7 +411,6 @@ body {
 }
 
 .card-border {
-  /* border: 1px solid var(--net-item-border); */
   border-left: 1px solid var(--net-item-border);
   border-right: 1px solid var(--net-item-border);
   border-bottom: 1px solid var(--net-item-border);
@@ -439,6 +424,9 @@ body {
 .card-portfolio {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-portfolio:hover, .card-portfolio:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .relative-text {
@@ -462,15 +450,8 @@ body {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.card-portfolio:hover .top-text,
-.card-portfolio:focus .top-text {
+.card-portfolio:hover .top-text, .card-portfolio:focus .top-text {
   transform: translateY(0);
-}
-
-.card-portfolio:hover,
-.card-portfolio:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .title-card-portfolio {

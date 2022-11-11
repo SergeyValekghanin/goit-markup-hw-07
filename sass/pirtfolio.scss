@@ -6,6 +6,8 @@
 
 @import './shared/header';
 @import './shared/footer';
+@import './shared/footer-form';
 
 @import './portfolio-layouts/filter-buttons';
-@import './portfolio-layouts/_portfolio-net-card';
+@import './portfolio-layouts/portfolio-wrap';
+@import './portfolio-layouts/portfolio-cards';

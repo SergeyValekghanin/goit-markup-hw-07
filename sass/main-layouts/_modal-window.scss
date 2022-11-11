@@ -17,19 +17,21 @@
   height: 581px;
   transform: translate(-50%, -50%);
   padding: 40px;
-
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   opacity: 1;
-
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-modal-close {
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .btn-modal-close:hover &,
+  .btn-modal-close:focus & {
+    fill: var(--acent);
+  }
 }
 
 .btn-modal-close {
@@ -39,24 +41,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   width: 30px;
   height: 30px;
   background-color: #fff;
   cursor: pointer;
-
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-modal-close:hover .icon-modal-close,
-.btn-modal-close:focus .icon-modal-close {
-  fill: var(--acent);
-}
-.btn-modal-close:hover,
-.btn-modal-close:focus {
-  border: 1px solid var(--acent);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--acent);
+  }
 }
 
 .is-hidden {
