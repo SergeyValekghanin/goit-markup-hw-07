@@ -1,15 +1,16 @@
-@import './root/root';
+@import './utils/variables';
 
-@import './reset/reset';
-
+@import './base/reset';
 @import './base/base';
+@import './base/visually-hidden';
 
-@import './sections-main/header';
-@import './sections-main/hero';
-@import './sections-main/benefits';
-@import './sections-main/our-work';
-@import './sections-main/our-team';
-@import './sections-main/our-clients';
-@import './sections-main/footer';
-@import './sections-main/modal-window';
-@import './sections-main//modal-form';
+@import './shared/header';
+@import './shared/footer';
+
+@import './main-layouts/hero';
+@import './main-layouts/benefits';
+@import './main-layouts/our-work';
+@import './main-layouts/our-team';
+@import './main-layouts/our-clients';
+@import './main-layouts/modal-window';
+@import './main-layouts//modal-form';
